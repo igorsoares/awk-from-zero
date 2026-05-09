@@ -1,6 +1,13 @@
-# awk-from-zero
+<div align="center">
+  
+  # awk-from-zero
 
-Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo).
+  <img width="775" height="402" alt="awk_from_zero" src="https://github.com/user-attachments/assets/2b89e7c3-2d56-4aa4-905f-3685ffb5ed14" />
+
+</div>
+<p></p>
+
+Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo)
 
 ## 📁 Arquivos
 
@@ -57,7 +64,7 @@ awk -F ":" '$7 == "/bin/bash" {print $1}' /etc/passwd | sort
 
 ## Artigo
 
-[Leia o artigo completo no Medium](medium.com)
+[Leia o artigo completo no Medium](https://medium.com/@igor.scuculhadev/entendendo-o-comando-awk-do-absoluto-zero-608ac62475b5)
 
 ## Referências
 
