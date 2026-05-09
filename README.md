@@ -6,7 +6,8 @@
 
 </div>
 <p></p>
-Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo).
+
+Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo)
 
 ## 📁 Arquivos
 
@@ -63,7 +64,7 @@ awk -F ":" '$7 == "/bin/bash" {print $1}' /etc/passwd | sort
 
 ## Artigo
 
-[Leia o artigo completo no Medium](medium.com)
+[Leia o artigo completo no Medium](https://medium.com/@igor.scuculhadev/entendendo-o-comando-awk-do-absoluto-zero-608ac62475b5)
 
 ## Referências
 
