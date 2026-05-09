@@ -1,5 +1,11 @@
-# awk-from-zero
+<div align="center">
+  
+  # awk-from-zero
 
+  <img width="775" height="402" alt="awk_from_zero" src="https://github.com/user-attachments/assets/2b89e7c3-2d56-4aa4-905f-3685ffb5ed14" />
+
+</div>
+<p></p>
 Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo).
 
 ## 📁 Arquivos
