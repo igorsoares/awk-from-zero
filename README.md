@@ -1,0 +1,65 @@
+# awk-from-zero
+
+Arquivos de exemplo utilizados no artigo **"Entendendo o comando AWK do absoluto zero"**, publicado no [Medium](#artigo).
+
+## 📁 Arquivos
+
+| Arquivo | Descrição |
+|---|---|
+| `books` | Lista de livros com ID, título, ano, autor e preço, separados por tabulação |
+| `numbers` | Arquivo simples com valores numéricos para exemplos de operações matemáticas |
+| `access.log` | Log de acesso simulado no formato Apache/Nginx para exemplos com expressões regulares |
+
+## Como usar
+
+Clone o repositório e siga os exemplos do artigo:
+
+```bash
+git clone https://github.com/seu-usuario/awk-artigo.git
+cd awk-artigo
+```
+
+### Exemplos rápidos
+
+**Listar apenas os títulos dos livros:**
+```bash
+awk -F "\t" '{print $2}' books
+```
+
+**Listar título e autor:**
+```bash
+awk 'BEGIN{FS="\t"} {print $2, "-", "Autor :", $4}' books
+```
+
+**Somar todos os valores do arquivo `numbers`:**
+```bash
+awk '
+BEGIN { print "Iniciando processamento de soma" }
+{ total += $1 }
+END { print "O total foi:", total }
+' numbers
+```
+
+**Filtrar livros com preço acima de 60:**
+```bash
+awk 'BEGIN{FS="\t"} {if ($NF > 60) print $0}' books
+```
+
+**Buscar linhas de um IP específico no log:**
+```bash
+awk '/^192.168.0.10/ {print $0}' access.log
+```
+
+**Usuários com `/bin/bash` como shell, ordenados:**
+```bash
+awk -F ":" '$7 == "/bin/bash" {print $1}' /etc/passwd | sort
+```
+
+## Artigo
+
+[Leia o artigo completo no Medium](medium.com)
+
+## Referências
+
+- [GNU AWK Documentação oficial](https://www.gnu.org/software/gawk/manual/)
+- Linux Eficiente na linha de comando — Daniel J. Barrett
