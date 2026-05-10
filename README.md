@@ -1,4 +1,12 @@
 <div align="center">
+
+  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+  ![AWK](https://img.shields.io/badge/AWK-4EAA25?style=flat&logo=gnubash&logoColor=white)
+  ![Shell](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white)
+
+</div>
+
+<div align="center">
   
   # awk-from-zero
 
